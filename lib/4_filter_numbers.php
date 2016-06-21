@@ -14,9 +14,8 @@ function filterNumbers($arr) {
 			//$new_array[] = $each_element;
 			array_push($new_array, $each_element);
 		}
-		return $new_array;
 	}
-
+	return $new_array;
 }
 
 // Write your own "tests" below. Refer to the the examples from exercise #1.
