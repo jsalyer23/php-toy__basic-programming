@@ -8,7 +8,12 @@
 
 function isGreaterThanFive($num) {
   // Your code goes here.
-  return false;
+	if ($num < 5) {
+  		return false;
+}
+	else {
+		return true;
+	}
 }
 
 // Write your own "tests" below. A couple examples are provided for you.
