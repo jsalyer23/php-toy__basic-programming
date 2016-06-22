@@ -13,9 +13,9 @@ function addUpNumbers($arr) {
 }
 
 // Write your own "tests" below. Refer to the the examples from exercise #1.
-echo "\nTesting that the sum of numbers in $number1 returns 12.\n";
-$number1 = array(1, 1, 6, 2, 2);
-if (addUpNumbers($number1) == 12) {
+echo "\nTesting that the sum of numbers in $number1 returns 8.\n";
+$number1 = array(1, 1, 6, -2, 2);
+if (addUpNumbers($number1) == 8) {
   echo "Success!";
 }
 else{

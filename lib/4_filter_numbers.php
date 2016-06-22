@@ -10,7 +10,7 @@ function filterNumbers($arr) {
   // Your code goes here.
 	$new_array = array();
 	foreach ($arr as $each_element) {
-		if ($each_element > 10){
+		if ($each_element < 10){
 			//$new_array[] = $each_element;
 			array_push($new_array, $each_element);
 		}
@@ -19,9 +19,9 @@ function filterNumbers($arr) {
 }
 
 // Write your own "tests" below. Refer to the the examples from exercise #1.
-echo "\nTesting that 1 and 5 are removed from the $rubber_duck array. Should return true.\n";
-$rubber_duck = array(1, 5, 11, 15, 26);
-if (filterNumbers($rubber_duck) == array(11, 15, 26)) {
+echo "\nTesting that 10, 11, 15, and 26 are removed from the $rubber_duck array. Should return true.\n";
+$rubber_duck = array(1, 5, 11, 15, 26, 10);
+if (filterNumbers($rubber_duck) == array(1, 5)) {
   echo "Success!";
 }
 else{
@@ -30,7 +30,7 @@ else{
 echo "\n-------------------------------------------------------------------\n";
 
 echo "\nTesting that 3, 7, 9, and 4 are removed from $quack array. Should return an empty array(true).\n";
-$quack = array(3, 7, 9, 4);
+$quack = array(77, 12, 90, 76);
 if (filterNumbers($quack) == array()) {
   echo "Success!";
 }
