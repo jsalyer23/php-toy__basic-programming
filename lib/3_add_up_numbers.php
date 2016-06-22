@@ -23,9 +23,9 @@ else{
 }
 echo "\n-------------------------------------------------------------------\n";
 
-echo "\nTesting that the sum of numbers in $number2 returns 27.\n";
-$number2 = array(5, 8, 10, 4);
-if (addUpNumbers($number2) == 27) {
+echo "\nTesting that the sum of numbers in $number2 returns 27.3.\n";
+$number2 = array(5, 8, 10.3, 4);
+if (addUpNumbers($number2) == 27.3) {
   echo "Success!";
 }
 else{
